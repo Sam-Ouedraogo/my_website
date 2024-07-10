@@ -1,0 +1,259 @@
+<!--Programmer: Samuel W. Ouedraogo
+    This is a website that host my resume and some information on my background
+    The website will be edited when needed to add more information and projects that I built 
+    Last edited 05/12/2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-website</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="mediaQuerries.css"/>
+</head>
+<body>
+    <script src="script.js"></script>
+    <nav id="desktop-nav">
+        <div class="logo">Samuel W. Ouedraogo</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--Below is the nav for the hamburger menu-->
+    <nav id="hamburger-nav">
+        <div class="logo"> Samuel W. Ouedraogo </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>               
+            </div>
+        </div>
+    </nav>
+    <secion id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile_picture.jpg" alt = "Samuel W. Ouedraogo" class="intro_img">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Samuel W. Ouedraogo</h1>
+            <p class="section__text__p2">Computer Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">Download CV<button>
+                <button class="btn btn-color-1" onclick="location.href = './#contact'">Contact Info<button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://linkedin.com'"/>
+
+                <img src="./assets/github.png" alt="My github profile" class="icon" onclick="location.href='https://github.com'"/>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'"/>
+
+    </secion>
+
+
+    <section id="about">
+        <!--p class="section__text__p1">Get to Know More</p-->
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <!--img src="./assets/about-pic.png" alt="profile-pic" class="about-pic"/-->
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container"> <img src="./assets/experience.png" alt="Experience Icon" class="icon"/>
+                    <h3>Experience</h3>
+                    <p>2+ years <br>Full Stack Development<br></p>
+                    </div>
+                
+                <div class="details-container"> 
+                    <img src="./assets/education.png" alt="Education Icon" class="icon"/>
+                    <h3>Education</h3>
+                    <p>B.Sc. Bachelor Degree in Computer Engineering<br>B.Sc. Bachelor Degree in Geology <br> B.Sc. Bachelor Degree in Environmental Sciences</p>
+                </div>                
+            </div>
+            <div class="text-container">
+                <p>
+                    Dedicated and innovative software engineer with a strong computer engineering background. Skilled in developing robust software solutions and proficient in algorithms, data structures, and system architecture. Passionate about technology and finance, with expertise in data science methodologies. Adept at extracting insights from complex datasets to drive informed decisions. Proven collaborator with cross-functional teams, delivering scalable and efficient solutions. Committed to continuous learning and staying updated with the latest tech and finance advancements.
+                </p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="experience">
+        <!--p class="section__text__p1">Explore My</p-->
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Software Engineering</h2>
+                    <div class="article container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>C++</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>C</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>HTML/CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>NodeJS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>React</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Mongodb</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Git</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>ExpressJS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Data Analytics</h2>
+                    <div class="article container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Dash</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Streamlit</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Tableau</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+    </section>
+
+
+    <section id="projects">
+        <h1 class="title">Projects</h1>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+    </section>
+
+    <section id="contact">
+        <!--p class="section__text__p1"> Get in Touch</p-->
+        <h1 class="title"> Get in Touch</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon"/>
+                <p><a href="mailto:owsam@outlook.fr">owsam@outlook.fr</a></p>
+            </div>
+
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="linkedIn icon" class="icon contact-icon"/>
+                <p><a href="https://linkedin.com/in/samuel-ouedraogo">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>                
+            </div>
+        </nav>
+        <p>Copyright &#169; Samuel W. Ouedraogo All Rights Reserved</p>
+    </footer>
+</body>
+</html>
