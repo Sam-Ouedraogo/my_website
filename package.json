@@ -9,5 +9,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "This is a simple application that displays my resume and some contact information"
+  "description": "This is a simple application that displays my resume and some contact information",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
