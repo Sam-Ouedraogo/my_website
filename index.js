@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 8001;
 app.use(express.static(path.join(__dirname, "public")));
 
 // Route to serve the HTML file
-app.get("/", (req, res) => {
+app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
