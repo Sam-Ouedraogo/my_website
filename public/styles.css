@@ -1,43 +1,83 @@
 /* General */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+/* .left-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; 
+    width: 200px;
+    border: black 0.1rem solid;
+} */
+
+#left-pane-img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+}
+.linkedIn-icon, .x-icon, .github-icon, .contact-icon, .about_me-icon, .portfolio-icon, .resume-icon{
+    list-style-type: none;
+    cursor: pointer;
+    height: 2rem;
+}
+
+.details{
+    list-style-type: none;
+}
+
+#intro-section{
+    display: grid;
+    grid-template-columns: 25% auto;
+    margin-left: 0px;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+/* *{
     margin: 0;
     padding: 0;
 }
 
 body{
     font-family: "Poppins", sans-serif;  /*imported from https://fonts.google.com*/ 
-    background-color: lightblue;
-}
-
+    /* background-color: lightblue;
+} */ 
+/* 
 html{
     scroll-behavior: smooth;
-}
-
+} */
+/* 
 p{
     color: rgb(85, 85, 85);
-}
+} */
 
 /* Transition */
-
+/* 
 a, .btn{
     transition: all 300ms ease;
-}
+} */
 
 /* Desktop nav */
-nav, .nav-links{
+/* nav, .nav-links{
     display: flex;
-}
+} */
 
-nav{
+/* nav{
     justify-content: space-around;
     align-items: center;
-    height: 17vh; /* 17% of view height */ 
-}
+    height: 17vh;
+} */
 
-.nav-links{
-    gap: 2rem; /*rem is unit of measurement */
+/* .nav-links{
+    gap: 2rem; 
     list-style: disc;
     font-size: 1.5rem;
 }
@@ -46,9 +86,9 @@ a{
     color: black;
     text-decoration: none;
     text-decoration-color: white;
-}
+} */
 
-a:hover{
+/* a:hover{
     color:grey;
     text-decoration: underline;
     text-underline-offset: 1rem;
@@ -61,11 +101,11 @@ a:hover{
 
 .logo:hover{
     cursor: default;
-}
+} */
 
 /* Hamburger */
 
-#hamburger-nav{
+/* #hamburger-nav{
     display: none;
 }
 
@@ -81,13 +121,13 @@ a:hover{
     height: 24px;
     width: 30px;
     cursor: pointer;
-}
+} */
 
-.hamburger-icon span{
+/* .hamburger-icon span{
     width: 100%;
     height: 2px;
     background-color: black;
-    transition: all 0.3 ease-in-out; /*Hamburger menu turns into X */
+    transition: all 0.3 ease-in-out;
 }
 
 .menu-links{
@@ -141,10 +181,10 @@ a:hover{
 
 .hamburger-icon span :first-child{
     transform: none;
-}
+} */
 
 /* SECTIONS */
-section{
+/* section{
     padding-top: 4vh;
     height: 96vh;
     margin: 0 10rem;
@@ -198,17 +238,17 @@ section{
     justify-content: center;
     margin-top: 1rem;
     gap: 1rem;
-}
+} */
 
 /* ICON */
-.icon{
+/* .icon{
     cursor: pointer;
     height: 2rem;
-}
+} */
 
 
 /* BUTTONS */
-.btn-container{
+/* .btn-container{
     display:flex;
     justify-content: center;
     gap: 1rem;
@@ -301,15 +341,15 @@ section{
     height: 400px;
     width: 400px;
     margin: auto 0;
-}
+} */
 
 /*Experience Section */
-#experience{
+/* #experience{
     position:relative;
-}
+} */
 
 
-.experience-sub-title{
+/* .experience-sub-title{
     color: rgb(85, 85, 85);
     font-weight: 600;
     font-size: 1.75rem;
@@ -340,10 +380,10 @@ article{
 
 article .icon{
     cursor: default;
-}
+} */
 
 /*PROJECTS SECTION */
-
+/* 
 #projects{
     position: relative;
 }
@@ -367,7 +407,7 @@ article .icon{
 .project-btn{
     color: black;
     border-color: rgb(163,163,163);
-}
+} */
 
 /*
 #about{
@@ -377,7 +417,7 @@ article .icon{
 
 /* CONTACT */
 
-#contact{
+/* #contact{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -413,10 +453,10 @@ article .icon{
 
 .email-icon{
     height: 2.5rem;
-}
+} */
 
 /* FOOTER SECTION */
-
+/* 
 footer{
     height: 26vh;
     margin: 0.1rem;
@@ -431,10 +471,10 @@ footer p{
     border-radius: 50px;
     width: 300px;
     height: auto;
-}
+} */
 
 /* Indent text container*/
-.text-container{
-    text-indent: 40px; /* Adjust the value as needed */
+/* .text-container{
+    text-indent: 40px; 
     color: black;
-}
+} */

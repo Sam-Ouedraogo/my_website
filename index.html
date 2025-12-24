@@ -13,10 +13,62 @@
     <link rel="stylesheet" href="./mediaQuerries.css"/>
 </head>
 <body>
-    <script src="./public/script.js"></script>
-    <nav id="desktop-nav">
-        <div class="logo">Samuel W. Ouedraogo</div>
-        <div>
+    <section id="intro-section">
+        <div class="left-container">
+            <h4>Samuel W. Ouedraogo</h4>
+            <img src="public/assets/profile_picture.jpg" alt = "Samuel W. Ouedraogo' photo" id="left-pane-img"/>
+            <p>Hello my name I Samuel Ouedraogo and I have a background in Computer Engineering.<br/>Welcome to my personal website!</p>
+
+            <ul class="social-icons">
+                <li><img src="./public/assets/linkedin.png" alt="My linkedin profile" class="linkedIn-icon" onclick="location.href='https://linkedin.com'"/></li>
+                <li><img src="./public/assets/github.png" alt="My github profile" class="github-icon" onclick="location.href='https://github.com'"/></li>
+                <li><img src="./public/assets/x.jpeg" alt="My twitter profile" class="x-icon" onclick="location.href='https://x.com/'"/></li>
+            </ul>
+
+            <ul class="details">
+                <li><img src="./public/assets/about_me.png" alt="About Me" class="about_me-icon" onclick="location.href='./#about'"/>About Me</li>
+                <li><img src="./public/assets/portfolio.jpg" alt="Portfolio" class="portfolio-icon" onclick="location.href='./#projects'"/>Portfolio</li>
+                <li><img src="./public/assets/resume.jpg" alt="Resume" class="resume-icon" onclick="location.href='./public/assets/Resume.pdf'"/>Resume</li>
+                <li><img src="./public/assets/contact.jpg" alt="Contact" class="contact-icon" onclick="location.href='./#contact'"/>Contact</li>
+                <li>More Pages</li>
+            </ul>
+        </div>
+
+        <div class="right-container">
+            <h1>Samuel W Ouedraogo</h1>
+            <h4><em>Computer Engineer</em></h4>
+            <p>Dedicated and innovative software engineer with a strong computer engineering background. Skilled in developing robust software solutions and proficient in algorithms, data structures, and system architecture. Passionate about technology and finance, with expertise in data science methodologies. Adept at extracting insights from complex datasets to drive informed decisions. Proven collaborator with cross-functional teams, delivering scalable and efficient solutions. Committed to continuous learning and staying updated with the latest tech and finance advancements.
+            </p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./public/assets/Resume.pdf')">View Resume</button>
+                <button class="btn btn-color-1" onclick="location.href = './#contact'">Portfolio</button>
+            </div>
+
+            <div class ="what-i-do-container">
+                <h2>What I Do</h2>
+                <p>I specialize in full-stack development, data analytics, and software engineering. My goal is to create efficient and scalable solutions that meet the needs of users and businesses alike.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <nav id="desktop-nav">
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -24,9 +76,9 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
     <!--Below is the nav for the hamburger menu-->
-    <nav id="hamburger-nav">
+    <!-- <nav id="hamburger-nav">
         <div class="logo"> Samuel W. Ouedraogo </div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
@@ -62,15 +114,15 @@
         </div>
         <img src="./public/assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'"/>
 
-    </secion>
+    </secion> -->
 
 
-    <section id="about">
-        <!--p class="section__text__p1">Get to Know More</p-->
+    <!-- <section id="about">
+
         <h1 class="title">About Me</h1>
         <div class="section-container">
             <div class="section__pic-container">
-                <!--img src="./assets/about-pic.png" alt="profile-pic" class="about-pic"/-->
+
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
@@ -92,11 +144,11 @@
             </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
-    <section id="experience">
-        <!--p class="section__text__p1">Explore My</p-->
+    <!-- <section id="experience">
+
         <h1 class="title">Experience</h1>
         <div class="experience-details-container">
             <div class="about-containers">
@@ -226,9 +278,9 @@
         <img src="./public/assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
     </section>
 
-    <section id="contact">
+    <section id="contact"> -->
         <!--p class="section__text__p1"> Get in Touch</p-->
-        <h1 class="title"> Get in Touch</h1>
+        <!-- <h1 class="title"> Get in Touch</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
                 <img src="./public/assets/email.png" alt="email icon" class="icon contact-icon email-icon"/>
@@ -241,6 +293,7 @@
             </div>
         </div>
     </section>
+    <script src="./public/script.js"></script>
 
     <footer>
         <nav>
@@ -254,6 +307,6 @@
             </div>
         </nav>
         <p>Copyright &#169; Samuel W. Ouedraogo All Rights Reserved</p>
-    </footer>
+    </footer> -->
 </body>
 </html>
