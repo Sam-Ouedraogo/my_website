@@ -28,6 +28,12 @@ document.querySelector('.contact-icon')?.addEventListener('click', () => {
     window.location.href = './#contact';
   });
 
+const themeToggleBtn = document.querySelector('.toggle-theme');
+themeToggleBtn?.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
+});
+
+
 function toggleMenu () {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
