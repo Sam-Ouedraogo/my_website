@@ -84,6 +84,8 @@ body {
     /* flex-wrap: wrap; */
     justify-content: center;
     margin-top: 2rem;
+    /* border: black 0.1rem solid; */
+    /* padding: 1rem; */
 }
 
 /* .dark-theme {
