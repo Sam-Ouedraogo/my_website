@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  /* Light theme */
+  --background: #b0abab;
+  --foreground: #1f2933;
+  --sidebar-bg: rgb(135, 206, 235);
+  --card-bg: #f3f4f6;
+  --accent: #3b82f6;
+}
+
+.dark {
+  /* Dark theme */
+  --background: #0f172a;
+  --foreground: #e5e7eb;
+  --sidebar-bg: #1e293b;
+  --card-bg: #111827;
+  --accent: #60a5fa;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-sidebar: var(--sidebar-bg);
+  --color-card: var(--card-bg);
+  --color-accent: var(--accent);
+  --font-sans: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--card-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sidebar-bg);
+  border-radius: 4px;
+}
+
+/* Smooth transitions */
+*, *::before, *::after {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Link styles */
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  text-decoration: underline;
+}
