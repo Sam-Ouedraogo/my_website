@@ -42,14 +42,20 @@ export default function Sidebar() {
       {/* Mobile theme toggle */}
       <button
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-        className="md:hidden fixed top-4 right-4 z-50 w-12 h-6 rounded-full bg-[var(--card-bg)] border-2 border-[var(--sidebar-bg)]"
+        className={`md:hidden fixed top-4 right-4 z-50 w-12 h-6 rounded-full border-2 transition-colors duration-300 ${
+          mounted && theme === "dark"
+            ? "bg-indigo-600 border-indigo-400"
+            : "bg-amber-400 border-amber-300"
+        }`}
         aria-label="Toggle theme"
       >
         <span
-          className={`absolute top-0.5 left-0.5 w-5 h-5 rounded-full bg-[var(--sidebar-bg)] transition-transform duration-300 ${
+          className={`absolute top-0.5 left-0.5 w-4 h-4 rounded-full bg-white shadow flex items-center justify-center text-[10px] transition-transform duration-300 ${
             mounted && theme === "dark" ? "translate-x-6" : ""
           }`}
-        />
+        >
+          {mounted ? (theme === "dark" ? "🌙" : "☀️") : "☀️"}
+        </span>
       </button>
 
       {/* Sidebar */}

@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section className="py-8 px-6 lg:px-12 bg-[var(--card-bg)]" id="about">
-      <div className="max-w-4xl">
+      <div className="w-full">
         <h2 className="text-2xl lg:text-3xl font-semibold mb-6">
           <em>What I Do</em>
         </h2>

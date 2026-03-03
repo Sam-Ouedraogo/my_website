@@ -31,7 +31,7 @@ const skills = [
 export default function Skills() {
   return (
     <section className="py-8 px-6 lg:px-12" id="skills">
-      <div className="max-w-6xl">
+      <div className="w-full">
         <h2 className="text-2xl lg:text-3xl font-semibold mb-8 text-center">
           <em>Skills & Technologies</em>
         </h2>

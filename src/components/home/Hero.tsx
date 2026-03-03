@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function Hero() {
   return (
     <section className="py-8 px-6 lg:px-12">
-      <div className="max-w-4xl">
+      <div className="w-full">
         <h1 className="text-3xl lg:text-4xl font-bold mb-2">
           <em>Samuel W. Ouedraogo</em>
         </h1>
