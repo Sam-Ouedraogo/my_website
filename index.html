@@ -1,323 +1,373 @@
-<!--Programmer: Samuel W. Ouedraogo
-    This is a website that host my resume and some information on my background
-    The website will be edited when needed to add more information and projects that I built 
-    Last edited 09/08/2024
--->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link id='browser-icon' rel="icon" type="image/jpg" href="assets/profile_picture.jpg">
-    <title>Portfolio</title>
+    <meta name="description" content="Samuel W. Ouedraogo — Software Development Engineer at Amazon Web Services, Computer Engineer, ML specialist with Active Secret Clearance.">
+    <link rel="icon" type="image/jpg" href="assets/profile_picture.jpg">
+    <title>Samuel W. Ouedraogo | Software Engineer</title>
     <link rel="stylesheet" href="styles.css"/>
-    <link rel="stylesheet" href="mediaQuerries.css"/>
+    <link rel="stylesheet" href="mediaQueries.css"/>
 </head>
 <body>
-    <section id="intro-section">
-        <div class="left-container">
+
+    <div id="layout">
+
+        <!-- =================== LEFT SIDEBAR =================== -->
+        <aside class="left-container">
             <h4>Samuel W. Ouedraogo</h4>
-            <img src="assets/profile_picture.jpg" alt = "Samuel W. Ouedraogo' photo" id="left-pane-img"/>
-            <p id="description">Hello my name is Samuel Ouedraogo and I have a background in Mathematics, Computer Engineering, and Analytics.<br/>Welcome to my personal website!</p>
+
+            <img src="assets/profile_picture.jpg" alt="Samuel W. Ouedraogo" id="left-pane-img"/>
+
+            <p id="description">Software Engineer at Amazon &middot; MS Georgia Tech &middot; Secret Clearance</p>
 
             <ul class="social-icons">
-                <li><img src="assets/linkedin.png" alt="My linkedin profile" class="icon linkedIn-icon"/></li>
-                <li><img src="assets/github.webp" alt="My github profile" class="icon github-icon"/></li>
-                <li><img src="assets/x.webp" alt="My twitter profile" class="icon x-icon"/></li>
+                <li>
+                    <a href="https://linkedin.com/in/samuel-ouedraogo" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <img src="assets/linkedin.png" alt="LinkedIn" class="icon"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Sam-Ouedraogo" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <img src="assets/github.webp" alt="GitHub" class="icon"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/Drago231231" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                        <img src="assets/x.webp" alt="X (Twitter)" class="icon"/>
+                    </a>
+                </li>
             </ul>
 
-            <ul class="details">
-                <li><img src="assets/about_me.webp" alt="About Me" class="icon about_me-icon"/>About Me</li>
-                <!--li><img src="assets/portfolio.jpg" alt="Portfolio" class="icon portfolio-icon"/>Portfolio</li-->
-                <li><img src="assets/resume.png" alt="Resume" class="icon resume-icon"/>Resume</li>
-                <li><img src="assets/email.jpg" alt="e-mail" class="icon email-icon"/>e-mail</li>
-            </ul>
+            <nav>
+                <ul class="details">
+                    <li><a href="#hero"       class="detail-link nav-link">About</a></li>
+                    <li><a href="#experience" class="detail-link nav-link">Experience</a></li>
+                    <li><a href="#projects"   class="detail-link nav-link">Projects</a></li>
+                    <li><a href="#skills"     class="detail-link nav-link">Skills</a></li>
+                    <li><a href="#education"  class="detail-link nav-link">Education</a></li>
+                    <li><a href="#contact"    class="detail-link nav-link">Contact</a></li>
+                    <li>
+                        <a href="assets/Resume.pdf" target="_blank" rel="noopener noreferrer" class="detail-link resume-link">
+                            <img src="assets/resume.png" alt="" class="icon"/>
+                            Resume
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
 
-        </div>
+        <!-- =================== MAIN CONTENT =================== -->
+        <main class="right-container">
 
-        <div class="right-container">
-            <div>
-                <h1>
-                    <strong><em>Samuel W. Ouedraogo</em></strong>
+            <!-- HERO -->
+            <section id="hero" class="fade-in">
+                <div class="title-row">
+                    <div>
+                        <h1><em>Samuel W. Ouedraogo</em></h1>
+                        <h4 class="typing-wrapper"><em id="typing-text"></em><span class="cursor">|</span></h4>
+                    </div>
                     <button id="theme-toggle" aria-label="Toggle dark mode" class="theme-toggle">
                         <span class="toggle-thumb"></span>
                     </button>
+                </div>
 
-                </h1>
-            </div>
-            <h4><em>Computer Engineer</em></h4>
-            <p id="about-me">I am a dedicated and innovative computer engineer with a strong foundation in software engineering. I build scalable, high-performance solutions using C++, Python, Node.js, and React, with experience across backend systems, data-driven applications, and modern web development. I am particularly passionate about machine learning, embedded systems, and full-stack development. Known for extracting actionable insights from complex datasets and collaborating effectively with cross-functional teams, I thrive in environments that value innovation, rigor, and continuous learning. I am deeply motivated to stay current with emerging technologies at the intersection of software, data, and finance.
-            </p>
-            <div class="btn-container">
-                <button class="btn resume">View Resume</button>
-                <!--<button class="btn portfolio">Portfolio</button>-->
-            </div>
+                <div class="stat-badges">
+                    <span class="badge">🏢 Amazon AWS</span>
+                    <span class="badge">🎓 Georgia Tech</span>
+                    <span class="badge">🔒 Secret Clearance</span>
+                    <span class="badge">☁️ AWS Certified</span>
+                    <span class="badge">🇺🇸 US Army Veteran</span>
+                </div>
 
-            <div class ="what-i-do-container">
-                <h2><em>What I Do</em></h2>
-                <p>I apply statistics, probability, and optimization to model complex systems and financial market behavior. My work emphasizes performance, rigor, and real-world impact. I also build AWS cloud-native software solutions, designing scalable data pipelines, deploying model-driven services, and ensuring reliability from research to production.
+                <p id="about-me">
+                    Software engineer with 4+ years of experience building production systems at Amazon Web Services and Lockheed Martin.
+                    I specialize in cloud-native architectures, LLM-powered applications, and high-performance defense systems.
+                    Currently pursuing an MS in Computational Analytics at Georgia Tech.
                 </p>
-            </div>
 
-            <div id="skills-container">
-                <ul class="programming-skills-list">
-                    <li><img src="assets/cpp.png" alt="C++" class="icon Cpp"/><br><strong>C++</strong><br>I use C++ to develop high-performance and resource-efficient applications, with a focus on system-level programming, numerical computation, and low-latency execution. I have experience leveraging C++ libraries and frameworks to build reliable software for data-driven and embedded environments.</li>
-                    <li><img src="assets/python.png" alt="Python" class="icon Python"/><br><strong>Python</strong><br>I leverage Python for statistical analysis, quantitative modeling, and machine learning, with extensive experience using libraries such as Pandas, NumPy, and SciPy to analyze large datasets, build predictive models, and derive actionable insights.</li>
-                    <li><img src="assets/nodejs.png" alt="NodeJS" class="icon NodeJS"/><br><strong>NodeJS</strong><br>I design and build robust backend systems using Node.js, focusing on scalable servers, high-performance APIs, and clean system architecture. I have hands-on experience with Express.js and modern databases including MongoDB and PostgreSQL, and I prioritize reliability, security, and maintainability in production environments.</li>
-                    <li><img src="assets/javaScript.png" alt="JavaScript" class="icon JavaScript"/><img src="assets/reactjs.png" alt="React" class="icon React"/><br><strong>TypeScript React</strong><br>I specialize in building modern, scalable web applications using TypeScript and React. I design intuitive, interactive user interfaces with a strong focus on responsiveness, accessibility, and performance, while applying frontend best practices across the entire development lifecycle.</li>
-                    <li><img src="assets/sql.png" alt="SQL" class="icon SQL"/> <img src="assets/dynamodb.svg" alt="DynamoDB" class="icon DynamoDB"/><br><strong>SQL MongoDB  DynamoDB</strong><br>I have extensive experience querying, transforming, and managing data across both SQL and NoSQL systems. I regularly write optimized SQL queries for complex joins, aggregations, and performance-critical analytics, and work with NoSQL databases such as MongoDB and DynamoDB to wrangle semi-structured data, design efficient schemas, and support scalable data pipelines.</li>
-                </ul>
-            </div>
+                <div class="btn-container">
+                    <a href="assets/Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Resume</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </section>
 
-        </div>
-    </section>
+            <!-- WHAT I DO -->
+            <section id="about" class="fade-in">
+                <h2 class="section-title">What I Do</h2>
+                <div class="what-i-do-container">
+                    <p>
+                        I build scalable, production-ready systems at the intersection of software engineering, cloud infrastructure,
+                        and machine learning. From LLM-powered enterprise tools at AWS to real-time radar tracking at Lockheed Martin,
+                        my work emphasizes performance, reliability, and measurable impact in demanding environments.
+                    </p>
+                </div>
+            </section>
 
+            <!-- EXPERIENCE -->
+            <section id="experience" class="fade-in">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <nav id="desktop-nav">
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav> -->
-    <!--Below is the nav for the hamburger menu-->
-    <!-- <nav id="hamburger-nav">
-        <div class="logo"> Samuel W. Ouedraogo </div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>               
-            </div>
-        </div>
-    </nav>
-    <secion id="profile">
-        <div class="section__pic-container">
-            <img src="./public/assets/profile_picture.jpg" alt = "Samuel W. Ouedraogo" class="intro_img">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Samuel W. Ouedraogo</h1>
-            <p class="section__text__p2">Computer Engineer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./public/assets/Resume.pdf')">Download CV<button>
-                <button class="btn btn-color-1" onclick="location.href = './#contact'">Contact Info<button>
-            </div>
-            <div id="socials-container">
-                <img src="./public/assets/linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://linkedin.com'"/>
-
-                <img src="./public/assets/github.png" alt="My github profile" class="icon" onclick="location.href='https://github.com'"/>
-            </div>
-        </div>
-        <img src="./public/assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'"/>
-
-    </secion> -->
-
-
-    <!-- <section id="about">
-
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container"> <img src="./public/assets/experience.png" alt="Experience Icon" class="icon"/>
-                    <h3>Experience</h3>
-                    <p>2+ years <br>Full Stack Development<br></p>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3>Software Development Engineer</h3>
+                                    <span class="company">Amazon Web Services</span>
+                                    <span class="location">Seattle, WA</span>
+                                </div>
+                                <span class="date">Jul 2025 – Present</span>
+                            </div>
+                            <ul class="timeline-bullets">
+                                <li>Architected and deployed production LLM-powered applications using AWS Bedrock with Retrieval-Augmented Generation, improving knowledge retrieval accuracy with context-aware responses</li>
+                                <li>Designed cloud-native internal tools using Lambda, S3, and DynamoDB to automate workflows and reduce manual processing time</li>
+                                <li>Implemented observability solutions with CloudWatch to analyze logs, metrics, and distributed traces and resolve performance bottlenecks</li>
+                                <li>Developed RESTful APIs and microservices integrating AI/ML capabilities into existing enterprise systems</li>
+                            </ul>
+                        </div>
                     </div>
-                
-                <div class="details-container"> 
-                    <img src="./public/assets/education.png" alt="Education Icon" class="icon"/>
-                    <h3>Education</h3>
-                    <p>B.Sc. Bachelor Degree in Computer Engineering<br>B.Sc. Bachelor Degree in Geology <br> B.Sc. Bachelor Degree in Environmental Sciences</p>
-                </div>                
-            </div>
-            <div class="text-container">
-                <p>
-                    Dedicated and innovative software engineer with a strong computer engineering background. Skilled in developing robust software solutions and proficient in algorithms, data structures, and system architecture. Passionate about technology and finance, with expertise in data science methodologies. Adept at extracting insights from complex datasets to drive informed decisions. Proven collaborator with cross-functional teams, delivering scalable and efficient solutions. Committed to continuous learning and staying updated with the latest tech and finance advancements.
-                </p>
-            </div>
-            </div>
-        </div>
-    </section> -->
 
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3>Software Engineer</h3>
+                                    <span class="company">Lockheed Martin</span>
+                                    <span class="location">Moorestown, NJ</span>
+                                </div>
+                                <span class="date">Apr 2023 – Jul 2025</span>
+                            </div>
+                            <ul class="timeline-bullets">
+                                <li>Enhanced radar tracking algorithm performance through mathematical optimization and signal processing for mission-critical defense systems</li>
+                                <li>Engineered high-performance C++ simulation models for real-time radar tracking and signal processing applications</li>
+                                <li>Designed and maintained RESTful APIs enabling cross-team data integration and system interoperability</li>
+                                <li>Delivered software solutions for defense systems under strict compliance requirements</li>
+                            </ul>
+                        </div>
+                    </div>
 
-    <!-- <section id="experience">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3>Research Assistant</h3>
+                                    <span class="company">Drexel University</span>
+                                    <span class="location">Philadelphia, PA</span>
+                                </div>
+                                <span class="date">Sep 2021 – Aug 2022</span>
+                            </div>
+                            <ul class="timeline-bullets">
+                                <li>Built predictive models on financial datasets using Python and R to identify market trends and risk factors</li>
+                                <li>Developed asynchronous spiking neural networks for neuromorphic computing research</li>
+                                <li>Built autonomous indoor robot in C++ for environmental sensor data acquisition and analysis</li>
+                            </ul>
+                        </div>
+                    </div>
 
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Software Engineering</h2>
-                    <div class="article container">
-                        <article>
-                            <img src="./public/assets/checkmark.png" alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>C++</h3>
-                                <p>Experienced</p>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3>CBRN Specialist</h3>
+                                    <span class="company">US Army</span>
+                                    <span class="location">Aberdeen, MD</span>
+                                </div>
+                                <span class="date">Nov 2018 – Nov 2024</span>
                             </div>
-                        </article>
-                        <article>
-                            <img src="./public/assets/checkmark.png" alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>C</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./public/assets/checkmark.png" alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>HTML/CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./public/assets/checkmark.png" alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>Python</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./public/assets/checkmark.png" alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>NodeJS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
+                            <ul class="timeline-bullets">
+                                <li>Led teams in high-rigor operational environments requiring probabilistic decision-making under uncertainty</li>
+                                <li>Maintained 100% operational readiness of detection and decontamination equipment</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- PROJECTS -->
+            <section id="projects" class="fade-in">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Predictive Analytics: Cancer Susceptibility</h3>
+                            <span class="project-date">Fall 2025</span>
+                        </div>
+                        <p>Built statistical models to analyze correlations between demographic factors (smoking, gender) and cancer risk using logistic regression and random forests on large clinical datasets.</p>
+                        <div class="tech-badges">
+                            <span class="tech">Python</span>
+                            <span class="tech">R</span>
+                            <span class="tech">Logistic Regression</span>
+                            <span class="tech">Random Forest</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Financial Market Pattern Recognition</h3>
+                            <span class="project-date">Fall 2022</span>
+                        </div>
+                        <p>Developed algorithmic trading models to identify market patterns and predict price movements using time series forecasting, backtested against historical financial data.</p>
+                        <div class="tech-badges">
+                            <span class="tech">Python</span>
+                            <span class="tech">C++</span>
+                            <span class="tech">SQL</span>
+                            <span class="tech">Time Series</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Phased Array Radar Control System</h3>
+                            <span class="project-date">Fall 2022</span>
+                        </div>
+                        <p>Designed control algorithms for planar phased array radar systems and optimized signal processing pipelines for real-time tracking applications.</p>
+                        <div class="tech-badges">
+                            <span class="tech">MATLAB</span>
+                            <span class="tech">Python</span>
+                            <span class="tech">Signal Processing</span>
+                            <span class="tech">Control Systems</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Autonomous Air Quality Monitoring Robot</h3>
+                            <span class="project-date">Fall 2021</span>
+                        </div>
+                        <p>Developed embedded C/C++ software for Raspberry Pi-based autonomous indoor navigation with integrated environmental sensors and data logging for air quality analysis.</p>
+                        <div class="tech-badges">
+                            <span class="tech">C++</span>
+                            <span class="tech">C</span>
+                            <span class="tech">Raspberry Pi</span>
+                            <span class="tech">Embedded Systems</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- SKILLS -->
+            <section id="skills" class="fade-in">
+                <h2 class="section-title">Skills &amp; Technologies</h2>
+                <div class="skills-grid">
+
+                    <div class="skill-category">
+                        <h4>Languages</h4>
+                        <div class="skill-tags">
+                            <span>Python</span><span>C++</span><span>Rust</span>
+                            <span>TypeScript</span><span>R</span><span>SQL</span>
+                            <span>Unix Shell</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Cloud &amp; DevOps</h4>
+                        <div class="skill-tags">
+                            <span>AWS Bedrock</span><span>Lambda</span><span>EC2</span>
+                            <span>S3</span><span>DynamoDB</span><span>CloudWatch</span>
+                            <span>CI/CD</span><span>Docker</span><span>Linux</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>ML &amp; Data</h4>
+                        <div class="skill-tags">
+                            <span>Scikit-learn</span><span>NumPy</span><span>Pandas</span>
+                            <span>SciPy</span><span>LLMs</span><span>RAG</span>
+                            <span>Tableau</span><span>Jupyter</span><span>MATLAB</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Engineering</h4>
+                        <div class="skill-tags">
+                            <span>Microservices</span><span>REST APIs</span>
+                            <span>System Design</span><span>Embedded Systems</span>
+                            <span>Signal Processing</span><span>Full-Stack</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- EDUCATION -->
+            <section id="education" class="fade-in">
+                <h2 class="section-title">Education</h2>
+                <div class="education-list">
+
+                    <div class="education-item">
+                        <div class="edu-icon">🎓</div>
+                        <div class="edu-content">
+                            <h3>Master of Science &mdash; Computational Analytics</h3>
+                            <span class="company">Georgia Institute of Technology</span>
+                            <span class="location">Atlanta, GA</span>
+                            <span class="date">Aug 2025 – Present</span>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="edu-icon">🎓</div>
+                        <div class="edu-content">
+                            <h3>Bachelor of Science &mdash; Computer Engineering</h3>
+                            <span class="company">Drexel University</span>
+                            <span class="location">Philadelphia, PA</span>
+                            <span class="date">Sep 2021 – Dec 2023</span>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="edu-icon">📐</div>
+                        <div class="edu-content">
+                            <h3>Associate of Science &mdash; Mathematics</h3>
+                            <span class="company">Community College of Philadelphia</span>
+                            <span class="location">Philadelphia, PA</span>
+                            <span class="date">Aug 2019 – Jun 2021</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="certifications">
+                    <h3>Certifications &amp; Clearance</h3>
+                    <div class="cert-badges">
+                        <span class="cert-badge">☁️ AWS Certified Cloud Practitioner</span>
+                        <span class="cert-badge">🔒 Active Secret Clearance</span>
+                        <span class="cert-badge">🗣️ French (Fluent)</span>
+                        <span class="cert-badge">🀄 Mandarin (Elementary)</span>
                     </div>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article container">
-                        <article>
-                            <img src="./public/assets/checkmark.png" alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./public/assets/checkmark.png" alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>React</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./public/assets/checkmark.png" alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>Mongodb</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./public/assets/checkmark.png" alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>SQL</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./public/assets/checkmark.png" alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>Git</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./public/assets/checkmark.png" alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>ExpressJS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
+            </section>
+
+            <!-- CONTACT -->
+            <section id="contact" class="fade-in">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-container">
+                    <p>I'm open to exciting opportunities, research collaborations, and conversations about software engineering, ML, and cloud systems.</p>
+                    <div class="contact-links">
+                        <a href="mailto:samwdrago@outlook.com" class="btn btn-primary">📧 Send Email</a>
+                        <a href="https://linkedin.com/in/samuel-ouedraogo" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">LinkedIn</a>
+                    </div>
+                    <div class="contact-info">
+                        <span>📍 Seattle, WA</span>
+                        <span>🌐 samuelwouedraogo.com</span>
                     </div>
                 </div>
+            </section>
 
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Data Analytics</h2>
-                    <div class="article container">
-                        <article>
-                            <img src="./public/assets/checkmark.png" alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>Dash</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./public/assets/checkmark.png" alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>Streamlit</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./public/assets/checkmark.png" alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>Tableau</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
+        </main>
+    </div>
 
-            </div>
-        </div>
-        <img src="./public/assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
-    </section>
+    <footer>
+        <p>Copyright &copy; 2025 Samuel W. Ouedraogo &mdash; All Rights Reserved</p>
+    </footer>
 
-
-    <section id="projects">
-        <h1 class="title">Projects</h1>
-        <img src="./public/assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
-    </section>
-
-    <section id="contact"> -->
-        <!--p class="section__text__p1"> Get in Touch</p-->
-        <!-- <h1 class="title"> Get in Touch</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./public/assets/email.png" alt="email icon" class="icon contact-icon email-icon"/>
-                <p><a href="mailto:owsam@outlook.fr">owsam@outlook.fr</a></p>
-            </div>
-
-            <div class="contact-info-container">
-                <img src="./public/assets/linkedin.png" alt="linkedIn icon" class="icon contact-icon"/>
-                <p><a href="https://linkedin.com/in/samuel-ouedraogo">LinkedIn</a></p>
-            </div>
-        </div>
-    </section>
-    <script src="./public/script.js"></script>
-    -->
-
-    <footer><p>Copyright &#169; Samuel W. Ouedraogo All Rights Reserved</p></footer> 
     <script src="script.js"></script>
 </body>
 </html>
